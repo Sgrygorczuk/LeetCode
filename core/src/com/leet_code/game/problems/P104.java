@@ -33,23 +33,24 @@ package com.leet_code.game.problems;
  */
 
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() { }
-
-    TreeNode(int val) { this.val = val; }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
 
 public class P104 {
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() { }
+
+        TreeNode(int val) { this.val = val; }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
     public int maxDepth(TreeNode root) {
         //In case the root is empty
         if(root == null){return 0;}
