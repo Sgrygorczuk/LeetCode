@@ -90,9 +90,24 @@ com/leet_code/game/problems/P1512.java
 com/leet_code/game/problems/P1704.java
  com.leet_code.game.problems.P1704
  com.leet_code.game.problems.P1704$Solution
-com/leet_code/game/problems/P1309.java
- com.leet_code.game.problems.P1309
- com.leet_code.game.problems.P1309$Solution
 com/leet_code/game/problems/P1732.java
  com.leet_code.game.problems.P1732
  com.leet_code.game.problems.P1732$Solution
+com/leet_code/game/problems/P1309.java
+ com.leet_code.game.problems.P1309
+ com.leet_code.game.problems.P1309$Solution
+com/leet_code/game/problems/P728.java
+ com.leet_code.game.problems.P728
+ com.leet_code.game.problems.P728$Solution
+com/leet_code/game/problems/P1295.java
+ com.leet_code.game.problems.P1295
+ com.leet_code.game.problems.P1295$Solution
+com/leet_code/game/problems/P1534.java
+ com.leet_code.game.problems.P1534
+ com.leet_code.game.problems.P1534$Solution
+com/leet_code/game/problems/P709.java
+ com.leet_code.game.problems.P709
+ com.leet_code.game.problems.P709$Solution
+com/leet_code/game/problems/P1748.java
+ com.leet_code.game.problems.P1748
+ com.leet_code.game.problems.P1748$Solution
