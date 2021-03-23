@@ -1,5 +1,8 @@
 package com.leet_code.game.problems;
 
+import java.util.HashMap;
+import java.util.HashSet;
+
 /**
  * You are given a string allowed consisting of distinct characters and an array of strings words. A string is consistent if all characters in the string appear in the string allowed.
  *
@@ -36,18 +39,27 @@ public class P1684 {
     public int countConsistentStrings(String allowed, String[] words) {
         int counter = 0;
 
-        for (String word : words) {
-            for (int j = 0; j < word.length(); j++) {
-                for (int i = 0; i < allowed.length(); i++) {
-                    if (!word.substring(j, j + 1).equals(allowed.substring(i, i + 1))) {
-                        break;
-                    }
-                    if (word.length() - 1 == j) {
-                        counter++;
-                    }
-                }
+        //Create a full HashSet of alphabet characters
+        HashSet<Character> alphabet = new HashSet<>();
+        for(int i = 0; i < 26; i++){
+            alphabet.add((char) ('a' + i));
+        }
+
+        //Removed all of the allowed characters from the hashset
+        for(int i = 0; i < allowed.length(); i++){
+            alphabet.remove(allowed.charAt(i));
+        }
+
+        //Now we go through each word and check if the characters in each word are indie the not
+        //allowed left over hashset
+        for(String word : words){
+            for(int i = 0; i < word.length(); i++){
+                if(alphabet.contains(word.charAt(i))) { break; }
+                if(i + 1 == word.length()){ counter ++; }
             }
         }
+
         return counter;
+
     }
 }
